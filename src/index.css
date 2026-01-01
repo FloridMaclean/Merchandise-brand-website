@@ -89,3 +89,53 @@ input, textarea, select {
   font-size: 16px;
 }
 
+/* Ensure images and media don't overflow on mobile */
+img, video, canvas, svg {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Improve scroll performance on mobile */
+@media (max-width: 768px) {
+  * {
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+  }
+  
+  /* Reduce motion for better performance on low-end devices */
+  @media (prefers-reduced-motion: no-preference) {
+    * {
+      will-change: auto;
+    }
+  }
+}
+
+/* Improve touch scrolling */
+@media (max-width: 768px) {
+  body {
+    overscroll-behavior-y: contain;
+  }
+}
+
+/* Improve 3D canvas performance on mobile */
+@media (max-width: 768px) {
+  canvas {
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+/* Ensure images and media don't overflow on mobile */
+img, video, canvas, svg {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Improve scroll performance on mobile */
+@media (max-width: 768px) {
+  * {
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+  }
+}
+
