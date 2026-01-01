@@ -6,14 +6,14 @@ import Hoodie3D from './3D/Hoodie3D'
 const Hero = () => {
   return (
     <section id="home" className="relative min-h-[calc(100vh-4rem)] sm:min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-br from-blue-50 via-purple-50 to-pink-50 pt-16 sm:pt-20 md:pt-24">
-      <div className="container mx-auto px-3 sm:px-4 md:px-6 relative z-10 py-8 sm:py-12 md:py-20 max-w-full">
-        <div className="grid md:grid-cols-2 gap-6 sm:gap-8 md:gap-16 items-center">
+      <div className="container mx-auto px-3 sm:px-4 md:px-6 relative z-10 py-8 sm:py-12 md:py-20 max-w-7xl">
+        <div className="grid md:grid-cols-2 gap-6 sm:gap-8 md:gap-16 items-center justify-items-center">
           {/* Text Content */}
           <motion.div
             initial={{ opacity: 0, x: -50 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8 }}
-            className="space-y-4 sm:space-y-6 md:space-y-8 w-full"
+            className="space-y-4 sm:space-y-6 md:space-y-8 w-full text-center md:text-left"
           >
             <motion.h1
               initial={{ opacity: 0 }}
@@ -110,7 +110,7 @@ const Hero = () => {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.6 }}
-              className="flex flex-col sm:flex-row flex-wrap gap-2 sm:gap-3 md:gap-4 w-full"
+              className="flex flex-col sm:flex-row flex-wrap gap-2 sm:gap-3 md:gap-4 w-full justify-center md:justify-start items-center"
             >
               <motion.button
                 whileHover={{ scale: 1.02, y: -2 }}
@@ -157,7 +157,7 @@ const Hero = () => {
             animate={{ opacity: 1, x: 0, scale: 1 }}
             transition={{ duration: 0.8, delay: 0.3, type: "spring", stiffness: 100 }}
             whileHover={{ scale: 1.02 }}
-            className="h-[250px] sm:h-[300px] md:h-[400px] lg:h-[500px] xl:h-[600px] w-full max-w-full"
+            className="h-[250px] sm:h-[300px] md:h-[400px] lg:h-[500px] xl:h-[600px] w-full max-w-full flex justify-center items-center"
           >
             <Canvas shadows>
               <PerspectiveCamera makeDefault position={[0, 0, 5]} />

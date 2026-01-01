@@ -40,7 +40,7 @@ const Navbar = () => {
           : 'bg-transparent'
       }`}
     >
-      <div className="container mx-auto px-3 sm:px-4 md:px-6 py-3 sm:py-4 md:py-5 max-w-full">
+      <div className="container mx-auto px-3 sm:px-4 md:px-6 py-3 sm:py-4 md:py-5 max-w-7xl">
         <div className="flex items-center justify-between gap-2">
           <motion.div
             initial={{ opacity: 0 }}
@@ -140,7 +140,7 @@ const Navbar = () => {
             transition={{ duration: 0.3 }}
             className="md:hidden overflow-hidden bg-white/95 backdrop-blur-md border-t border-gray-100"
           >
-            <div className="container mx-auto px-3 sm:px-4 py-4 sm:py-6 space-y-3 sm:space-y-4 max-w-full">
+            <div className="container mx-auto px-3 sm:px-4 py-4 sm:py-6 space-y-3 sm:space-y-4 max-w-7xl">
               {['Home', 'Products', 'About', 'Contact'].map((item, index) => (
                 <motion.a
                   key={item}

@@ -56,6 +56,8 @@ html {
   /* Ensure containers don't overflow */
   .container {
     max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
     padding-left: 0.75rem;
     padding-right: 0.75rem;
   }
